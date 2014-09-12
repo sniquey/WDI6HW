@@ -1,8 +1,13 @@
-puts "What is your age?"
-drinking_age = gets.chomp.to_i
+print "What is your age? "
+drinking_age = gets.chomp.to_i # You can "chain" methods together
 
-if drinking_age < 18
-	puts "you are underage"
-else
-	puts "you're not jailbate"
+def check_legality(age)
+	print "You are #{age}, "
+	if age >=18
+		puts "Drink up to numb the pain"
+	else
+	puts "You gotta wait for legality!"
+	end
 end
+
+check_legality(drinking_age)
